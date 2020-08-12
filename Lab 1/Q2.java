@@ -6,7 +6,7 @@ public class Q2 {
             case 'A': System.out.println("Action Movie Fan"); break;
             case 'C': System.out.println("Comedy Movie Fan"); break;
             case 'D': System.out.println("Drama Movie Fan"); break;
-            default: System.out.println("Invalid Choice");
+            default : System.out.println("Invalid Choice");
         }
     }
 }
