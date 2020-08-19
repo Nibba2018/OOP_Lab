@@ -1,3 +1,5 @@
+import java.io.PrintStream;
+
 public class FloatPoint {
 
     public static void selectionSort(Double[] arr){
@@ -22,9 +24,13 @@ public class FloatPoint {
 
         selectionSort(numbs);
 
-        System.out.println("Ascending:");
+        PrintStream ps = new PrintStream(System.out);
+
         for(int i=0; i<4; i++)
-            System.out.print(numbs[i].doubleValue() + " ");
-        System.out.println();
+            ps.format("%.2f ", numbs[i].doubleValue());
+
+        ps.format("\n%.2f \n",
+                  Double.sum(Double.sum(numbs[0], numbs[1]),
+                             Double.sum(numbs[2], numbs[3])));
     }
 }
